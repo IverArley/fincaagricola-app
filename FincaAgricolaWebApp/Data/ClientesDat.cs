@@ -125,9 +125,9 @@ namespace Data
 
             MySqlCommand objSelectCmd = new MySqlCommand();
             objSelectCmd.Connection = objPer.openConnection();
-            objSelectCmd.CommandText = "sp_show_clientes"; //nombre del procedimiento almacenado
+            objSelectCmd.CommandText = "sp_delete_clientes"; //nombre del procedimiento almacenado
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("_id", MySqlDbType.Int32).Value = _idCategory;
+            objSelectCmd.Parameters.Add("v_clie_id", MySqlDbType.Int32).Value = _idCategory;
 
             try
             {
