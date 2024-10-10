@@ -122,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientesDat.cs" />
-    <Compile Include="ClimaDat.cs" />
     <Compile Include="Persistence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
