@@ -125,6 +125,7 @@
     <Compile Include="Persistence.cs" />
     <Compile Include="ProductosDat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiegoDat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
