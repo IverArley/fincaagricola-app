@@ -121,13 +121,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
- 
     <Compile Include="ParcelasDat.cs" />
- 
- 
     <Compile Include="InsumosDat.cs" />
- 
- 
     <Compile Include="EmpleadosDat.cs" />
     <Compile Include="CultivosDat.cs" />
     <Compile Include="FincaDat.cs" />
@@ -135,13 +130,11 @@
     <Compile Include="ClimaDat.cs" />
     <Compile Include="DetalleDat.cs" />
     <Compile Include="MaquinariasDat.cs" />
- 
- 
     <Compile Include="Persistence.cs" />
     <Compile Include="ProductosDat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedoresDat.cs" />
     <Compile Include="RiegoDat.cs" />
-    
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
