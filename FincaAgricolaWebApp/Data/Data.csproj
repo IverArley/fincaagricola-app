@@ -122,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
  
+    <Compile Include="InsumosDat.cs" />
+ 
+ 
     <Compile Include="EmpleadosDat.cs" />
     <Compile Include="CultivosDat.cs" />
     <Compile Include="FincaDat.cs" />
@@ -129,6 +132,7 @@
     <Compile Include="ClimaDat.cs" />
     <Compile Include="DetalleDat.cs" />
     <Compile Include="MaquinariasDat.cs" />
+ 
     <Compile Include="Persistence.cs" />
     <Compile Include="ProductosDat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
