@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
  
+    <Compile Include="CultivosDat.cs" />
     <Compile Include="FincaDat.cs" />
     <Compile Include="ClientesDat.cs" />
     <Compile Include="ClimaDat.cs" />
