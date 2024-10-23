@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace Data
 {
@@ -18,6 +20,24 @@ namespace Data
             MySqlCommand objSelectCmd = new MySqlCommand();
             objSelectCmd.Connection = objPer.openConnection();
             objSelectCmd.CommandText = "sp_show_parcelas"; // Nombre del procedimiento almacenado
+            objSelectCmd.CommandType = CommandType.StoredProcedure;
+
+            objAdapter.SelectCommand = objSelectCmd;
+            objAdapter.Fill(objData);
+
+            objPer.closeConnection();
+
+            return objData;
+        }
+
+        public DataSet showParcelaDDL()
+        {
+            MySqlDataAdapter objAdapter = new MySqlDataAdapter();
+            DataSet objData = new DataSet();
+
+            MySqlCommand objSelectCmd = new MySqlCommand();
+            objSelectCmd.Connection = objPer.openConnection();
+            objSelectCmd.CommandText = "sp_show_parcelas_ddl"; // Nombre del procedimiento almacenado
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             objAdapter.SelectCommand = objSelectCmd;
