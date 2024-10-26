@@ -1,16 +1,18 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Web;
 
-namespace Data
+
+namespace Logic
 {
-    public class ProveedoresDat
+
+    public class ProveedoresLog
     {
         // Se crea una instancia de la clase Persistence para manejar la conexión a la base de datos.
-        Persistence objPer = new Persistence();
+        ProveedoresLog objPro = new ();
 
         public DataSet showProveedor()
         {
