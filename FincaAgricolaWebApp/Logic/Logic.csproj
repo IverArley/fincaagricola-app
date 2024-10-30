@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="ParcelasLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedoresLog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
