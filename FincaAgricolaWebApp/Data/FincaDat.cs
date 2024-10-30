@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -42,6 +44,22 @@ namespace Data
             objPer.closeConnection();
 
             // Se devuelve el DataSet que contiene los productos.
+            return objData;
+        }
+
+        //Metodo para mostrar unicamente el id y el nombre
+        public DataSet showFincaDDL()
+        {
+            MySqlDataAdapter objAdapter = new MySqlDataAdapter();
+            DataSet objData = new DataSet();
+
+            MySqlCommand objSelectCmd = new MySqlCommand();
+            objSelectCmd.Connection = objPer.openConnection();
+            objSelectCmd.CommandText = "sp_show_finca_ddl";
+            objSelectCmd.CommandType = CommandType.StoredProcedure;
+            objAdapter.SelectCommand = objSelectCmd;
+            objAdapter.Fill(objData);
+            objPer.closeConnection();
             return objData;
         }
 
@@ -128,7 +146,7 @@ namespace Data
             objSelectCmd.CommandText = "sp_delete_finca"; //nombre del procedimiento almacenado
             objSelectCmd.CommandType = CommandType.StoredProcedure;
             // Agrega el parámetro correspondiente
-            objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _idCategory;
+            objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _id;
 
             try
             {
