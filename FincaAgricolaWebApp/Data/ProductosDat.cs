@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Remoting;
 using System.Web;
@@ -28,6 +29,21 @@ namespace Data
 
             objPer.closeConnection();
 
+            return objData;
+        }
+
+        public DataSet showProductosDDL()
+        {
+            MySqlDataAdapter objAdapter = new MySqlDataAdapter();
+            DataSet objData = new DataSet();
+
+            MySqlCommand objSelectCmd = new MySqlCommand();
+            objSelectCmd.Connection = objPer.openConnection();
+            objSelectCmd.CommandText = "sp_show_productos_ddl";
+            objSelectCmd.CommandType = CommandType.StoredProcedure;
+            objAdapter.SelectCommand = objSelectCmd;
+            objAdapter.Fill(objData);
+            objPer.closeConnection();
             return objData;
         }
 
