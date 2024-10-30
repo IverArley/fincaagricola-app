@@ -27,7 +27,7 @@ namespace Data
         }
 
         public DataSet showClientesDDL()
-<<<<<<< HEAD
+
         {
             MySqlDataAdapter objAdapter = new MySqlDataAdapter();
             DataSet objData = new DataSet();
@@ -44,8 +44,7 @@ namespace Data
 
         //Metodo para guardar un nuevo Clima
         public bool saveClientes(string _nombre, string _telefono, string _direccion)
-=======
->>>>>>> df6f2aeb4be94320fd1962e9d9050686ac0a66b5
+
         {
             MySqlDataAdapter objAdapter = new MySqlDataAdapter();
             DataSet objData = new DataSet();
