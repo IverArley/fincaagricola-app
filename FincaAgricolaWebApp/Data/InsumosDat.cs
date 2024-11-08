@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -41,7 +43,7 @@ namespace Data
             // Agrega los parámetros correspondientes
             objSelectCmd.Parameters.Add("v_insu_nombre", MySqlDbType.VarChar).Value = _nombre;
             objSelectCmd.Parameters.Add("v_insu_cantidad ", MySqlDbType.Int32).Value = _cantidad;
-            objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _cargo;
+            objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _fecha;
             objSelectCmd.Parameters.Add("v_prov_id ", MySqlDbType.Int32).Value = _provId;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
@@ -75,7 +77,7 @@ namespace Data
             objSelectCmd.Parameters.Add("v_insu_id", MySqlDbType.Int32).Value = _id;
             objSelectCmd.Parameters.Add("v_insu_nombre", MySqlDbType.VarChar).Value = _nombre;
             objSelectCmd.Parameters.Add("v_insu_cantidad ", MySqlDbType.Int32).Value = _cantidad;
-            objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _cargo;
+            objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _fecha;
             objSelectCmd.Parameters.Add("v_prov_id ", MySqlDbType.Int32).Value = _provId;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 

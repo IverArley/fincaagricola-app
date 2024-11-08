@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -129,7 +131,7 @@ namespace Data
             objSelectCmd.Connection = objPer.openConnection();
             objSelectCmd.CommandText = "sp_delete_detalle_venta"; //nombre del procedimiento almacenado
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("v_det_id", MySqlDbType.Int32).Value = _idCategory;
+            objSelectCmd.Parameters.Add("v_det_id", MySqlDbType.Int32).Value = _id;
 
             try
             {

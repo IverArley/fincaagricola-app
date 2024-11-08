@@ -1,4 +1,4 @@
-﻿using MySqlConnector;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -143,7 +143,7 @@ namespace Data
             objSelectCmd.Connection = objPer.openConnection();
             objSelectCmd.CommandText = "sp_delete_ventas"; //nombre del procedimiento almacenado
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("v_vent_id", MySqlDbType.Int32).Value = _idCategory;
+            objSelectCmd.Parameters.Add("v_vent_id", MySqlDbType.Int32).Value = _id;
 
             try
             {
@@ -159,6 +159,11 @@ namespace Data
             }
             objPer.closeConnection();
             return executed;
+        }
+
+        public bool deleteFinca(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
