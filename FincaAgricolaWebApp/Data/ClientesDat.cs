@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
-
 namespace Data
 {
     public class ClientesDat
@@ -43,25 +42,6 @@ namespace Data
         }
 
         //Metodo para guardar un nuevo Clima
-        public bool saveClientes(string _nombre, string _telefono, string _direccion)
-
-        {
-            MySqlDataAdapter objAdapter = new MySqlDataAdapter();
-            DataSet objData = new DataSet();
-
-            MySqlCommand objSelectCmd = new MySqlCommand();
-            objSelectCmd.Connection = objPer.openConnection();
-            objSelectCmd.CommandText = "sp_show_clientes_ddl";
-            objSelectCmd.CommandType = CommandType.StoredProcedure;
-
-            objAdapter.SelectCommand = objSelectCmd;
-            objAdapter.Fill(objData);
-
-            objPer.closeConnection();
-
-            return objData;
-        }
-
         public bool saveClientes(string _nombre, string _telefono, string _direccion)
         {
             bool executed = false;
