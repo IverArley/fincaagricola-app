@@ -103,8 +103,8 @@ namespace Presentation
         protected void GVRiego_SelectedIndexChanged(object sender, EventArgs e)
         {
             HFRiegoId.Value = GVRiego.SelectedRow.Cells[0].Text;
-            TBFecha.Text = GVRiego.SelectedRow.Cells[1].Text;
             DDLParcelas.SelectedValue = GVRiego.SelectedRow.Cells[1].Text;
+            TBFecha.Text = GVRiego.SelectedRow.Cells[2].Text;
         }
     }
 }
