@@ -11,7 +11,6 @@ namespace Logic
     {
         ClimaDat objClim = new ClimaDat();
 
-
         public DataSet showClima()
         {
             return objClim.showClima();
@@ -24,7 +23,7 @@ namespace Logic
         }
 
         //Metodo para actulizar un finca
-        public bool updateProductos(int _id, DateTime _fecha, double _humedad, double _temperatura, int _parcId)
+        public bool updateClima(int _id, DateTime _fecha, double _humedad, double _temperatura, int _parcId)
         {
             return objClim.updateClima(_id, _fecha, _humedad, _temperatura, _parcId);
         }

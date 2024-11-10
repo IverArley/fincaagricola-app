@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Logic;
+using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -57,14 +60,14 @@ namespace Presentation
             if (DateTime.TryParse(TBFecha.Text, out _fecha))
             {
                 _parcId = Convert.ToInt32(DDLParcelas.SelectedValue);
-                _humedad = TBHumedad.Text;
-                _temperatura = TBTemperatura.Text;
-                bool executed = objClim.saveRiego(_fecha, _parcId);
+                double.TryParse(TBHumedad.Text, out _humedad);
+                double.TryParse(TBTemperatura.Text, out _temperatura);
+                bool executed = objClim.saveClima(_fecha, _humedad, _temperatura, _parcId);
 
                 if (executed)
                 {
                     LblMsj.Text = "El clima se guardó exitosamente!";
-                    showRiego();
+                    showClima();
                     clear();
                 }
                 else
@@ -84,8 +87,8 @@ namespace Presentation
             if (DateTime.TryParse(TBFecha.Text, out _fecha))
             {
                 _id = Convert.ToInt32(HFClimaId.Value);
-                _humedad = TBHumedad.Text;
-                _temperatura = TBTemperatura.Text;
+                double.TryParse(TBHumedad.Text, out _humedad);
+                double.TryParse(TBTemperatura.Text, out _temperatura);
                 _parcId = Convert.ToInt32(DDLParcelas.SelectedValue);
 
                 bool executed = objClim.updateClima(_id, _fecha, _humedad, _temperatura, _parcId);
@@ -93,7 +96,7 @@ namespace Presentation
                 if (executed)
                 {
                     LblMsj.Text = "El clima se actualizo exitosamente!";
-                    showRiego();
+                    showClima();
                     clear();
                 }
                 else
