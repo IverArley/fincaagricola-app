@@ -94,12 +94,15 @@
     </Compile>
     <Compile Include="WFRiego.aspx.designer.cs">
       <DependentUpon>WFRiego.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="WFClientes.aspx.cs">
       <DependentUpon>WFClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WFClientes.aspx.designer.cs">
       <DependentUpon>WFClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
