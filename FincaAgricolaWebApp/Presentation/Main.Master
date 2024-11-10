@@ -24,7 +24,7 @@
         <a href="#">parcelas</a>
         <a href="#">producto</a>
         <a href="#">proveedores</a>
-        <a href="#">riego</a>
+        <a href="WFRiego.aspx">riego</a>
         <a href="#">venta</a>
         <a href="#">cerrar sesion</a>
         <div>
