@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <%-- dentro del formulario --%>
         <a href="Inicio.aspx">incio</a>
-        <a href="#">clientes</a>
+        <a href="WFClientes.aspx">clientes</a>
         <a href="#">clima</a>
         <a href="#">cultivo</a>
         <a href="#">detalle</a>
