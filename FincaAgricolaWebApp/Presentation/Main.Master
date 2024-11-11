@@ -23,7 +23,7 @@
         <a href="#">maquinaria</a>
         <a href="#">parcelas</a>
         <a href="#">producto</a>
-        <a href="#">proveedores</a>
+        <a href="WFProveedores.aspx">proveedores</a>
         <a href="WFRiego.aspx">riego</a>
         <a href="#">venta</a>
         <a href="#">cerrar sesion</a>
