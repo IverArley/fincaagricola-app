@@ -48,7 +48,7 @@ namespace Data
         }
 
         //Metodo para guardar un nuevo Clima
-        public bool saveClima(DateTime _fecha, double _humedad, double _temperatura)
+        public bool saveClima(DateTime _fecha, double _humedad, double _temperatura, int _parcId)
         {
             // Se inicializa una variable para indicar si la operación se ejecutó correctamente.
             bool executed = false;
@@ -64,6 +64,7 @@ namespace Data
             objSelectCmd.Parameters.Add("v_clim_fecha", MySqlDbType.VarString).Value = _fecha;
             objSelectCmd.Parameters.Add("v_clim_humedad", MySqlDbType.VarString).Value = _humedad;
             objSelectCmd.Parameters.Add("v_clim_temperatura", MySqlDbType.Int32).Value = _temperatura;
+            objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
             {

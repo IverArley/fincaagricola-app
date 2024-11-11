@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -67,6 +68,9 @@
     <Content Include="Inicio.aspx" />
     <Content Include="Web.config" />
     <Content Include="WFProveedores.aspx" />
+    <Content Include="WFClima.aspx" />
+    <Content Include="WFRiego.aspx" />
+    <Content Include="WFClientes.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Inicio.aspx.cs">
@@ -90,6 +94,27 @@
     </Compile>
     <Compile Include="WFProveedores.aspx.designer.cs">
       <DependentUpon>WFProveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFClima.aspx.cs">
+      <DependentUpon>WFClima.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFClima.aspx.designer.cs">
+      <DependentUpon>WFClima.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFRiego.aspx.cs">
+      <DependentUpon>WFRiego.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFRiego.aspx.designer.cs">
+      <DependentUpon>WFRiego.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFClientes.aspx.cs">
+      <DependentUpon>WFClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFClientes.aspx.designer.cs">
+      <DependentUpon>WFClientes.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
