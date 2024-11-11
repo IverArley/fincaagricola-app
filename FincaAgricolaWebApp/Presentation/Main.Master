@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
 
 <!DOCTYPE html>
 
@@ -19,7 +19,7 @@
         <a href="#">detalle</a>
         <a href="#">empleados</a>
         <a href="#">finca</a>
-        <a href="#">isumos</a>
+        <a href="WFInsumos.aspx">isumos</a>
         <a href="#">maquinaria</a>
         <a href="#">parcelas</a>
         <a href="#">producto</a>
