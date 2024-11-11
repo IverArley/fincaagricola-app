@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
-
 <!DOCTYPE html>
 
 <html>
@@ -15,7 +14,7 @@
         <a href="Inicio.aspx">incio</a>
         <a href="#">clientes</a>
         <a href="#">clima</a>
-        <a href="#">cultivo</a>
+        <a href="WFCultivos.aspx">cultivo</a>
         <a href="#">detalle</a>
         <a href="#">empleados</a>
         <a href="#">finca</a>

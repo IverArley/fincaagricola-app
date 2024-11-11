@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="Inicio.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WFCultivos.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Inicio.aspx.cs">
@@ -86,6 +88,20 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WFCultivos.aspx.cs">
+      <DependentUpon>WFCultivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFCultivos.aspx.designer.cs">
+      <DependentUpon>WFCultivos.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />
