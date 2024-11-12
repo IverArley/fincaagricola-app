@@ -53,7 +53,7 @@ namespace Data
             
             objSelectCmd.Parameters.Add("v_clie_nombre", MySqlDbType.VarString).Value = _nombre;
             objSelectCmd.Parameters.Add("v_clie_telefono", MySqlDbType.VarString).Value = _telefono;
-            objSelectCmd.Parameters.Add("v_clie_direccion", MySqlDbType.Int32).Value = _direccion;
+            objSelectCmd.Parameters.Add("v_clie_direccion", MySqlDbType.VarString).Value = _direccion;
 
             try
             {               
@@ -85,7 +85,7 @@ namespace Data
             objSelectCmd.Parameters.Add("v_clie_id", MySqlDbType.Int32).Value = _id;
             objSelectCmd.Parameters.Add("v_clie_nombre", MySqlDbType.VarString).Value = _nombre;
             objSelectCmd.Parameters.Add("v_clie_telefono", MySqlDbType.VarString).Value = _telefono;
-            objSelectCmd.Parameters.Add("v_clie_direccion", MySqlDbType.Int32).Value = _direccion;
+            objSelectCmd.Parameters.Add("v_clie_direccion", MySqlDbType.VarString).Value = _direccion;
 
             try
             {

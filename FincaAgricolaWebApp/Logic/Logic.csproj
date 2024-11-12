@@ -69,8 +69,16 @@
   <ItemGroup>
     <Compile Include="MaquinariasLog.cs" />
     <Compile Include="ParcelasLog.cs" />
+    <Compile Include="DetalleLog.cs" />
+    <Compile Include="CultivosLog.cs" />
+    <Compile Include="ClimaLog.cs" />
+    <Compile Include="InsumosLog.cs" />
+    <Compile Include="ParcelasLog.cs" />
+    <Compile Include="ClientesLog.cs" />
     <Compile Include="ProductosLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedoresLog.cs" />
+    <Compile Include="RiegoLog.cs" />
     <Compile Include="VentasLog.cs" />
   </ItemGroup>
   <ItemGroup>

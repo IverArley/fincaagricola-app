@@ -45,7 +45,7 @@ namespace Data
             return objData;
         }
 
-        public bool saveProveedor(string _nombre, string _contacto, string _tipo)
+        public bool saveProveedor(string _nombre, string _producto, string _telefono)
         {
             bool executed = false;
             int row;
@@ -56,9 +56,9 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_pro_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_pro_contacto", MySqlDbType.VarChar).Value = _contacto;
-            objSelectCmd.Parameters.Add("v_pro_tipo_insumo", MySqlDbType.VarChar).Value = _tipo;
+            objSelectCmd.Parameters.Add("v_prov_nombre", MySqlDbType.VarChar).Value = _nombre;
+            objSelectCmd.Parameters.Add("v_prov_Producto", MySqlDbType.VarChar).Value = _producto;
+            objSelectCmd.Parameters.Add("v_prov_telefono", MySqlDbType.VarChar).Value = _telefono;
 
             try
             {
@@ -76,7 +76,7 @@ namespace Data
             return executed;
         }
 
-        public bool updateProveedor(int _id, string _nombre, string _contacto, string _tipo)
+        public bool updateProveedor(int _id, string _nombre, string _producto, string _telefono)
         {
             bool executed = false;
             int row;
@@ -87,10 +87,10 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_pro_id", MySqlDbType.Int32).Value = _id;
-            objSelectCmd.Parameters.Add("v_pro_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_pro_contacto", MySqlDbType.VarChar).Value = _contacto;
-            objSelectCmd.Parameters.Add("v_pro_tipo_insumo", MySqlDbType.VarChar).Value = _tipo;
+            objSelectCmd.Parameters.Add("v_prov_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_prov_nombre", MySqlDbType.VarChar).Value = _nombre;
+            objSelectCmd.Parameters.Add("v_prov_Producto", MySqlDbType.VarChar).Value = _producto;
+            objSelectCmd.Parameters.Add("v_prov_telefono", MySqlDbType.VarChar).Value = _telefono;
 
             try
             {
@@ -119,7 +119,7 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega el parámetro correspondiente
-            objSelectCmd.Parameters.Add("v_pro_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_prov_id", MySqlDbType.Int32).Value = _id;
 
             try
             {
