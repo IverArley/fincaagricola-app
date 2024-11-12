@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Web;
+using Data;
 
 
 namespace Logic
@@ -12,7 +13,7 @@ namespace Logic
     public class ProveedoresLog
     {
         // Se crea una instancia de la clase Persistence para manejar la conexión a la base de datos.
-        ProveedoresLog objPro = new ProveedoresLog();
+        ProveedoresDat objPro = new ProveedoresDat();
 
         public DataSet showProveedor()
         {
@@ -25,14 +26,14 @@ namespace Logic
             return objPro.showProvedoresDDL();
         }
 
-        public bool saveProveedor(string _nombre, string _contacto, string _tipo)
+        public bool saveProveedor(string _nombre, string _producto, string _telefono)
         {
-            return objPro.saveProveedor(_nombre,  _contacto,  _tipo);
+            return objPro.saveProveedor(_nombre,  _producto,  _telefono);
         }
 
-        public bool updateProveedor(int _id, string _nombre, string _contacto, string _tipo)
+        public bool updateProveedor(int _id, string _nombre, string _producto, string _telefono)
         {
-            return objPro.updateProveedor(_id,_nombre, _contacto, _tipo);
+            return objPro.updateProveedor(_id,_nombre, _producto, _telefono);
         }
 
         public bool deleteProveedor(int _id)
