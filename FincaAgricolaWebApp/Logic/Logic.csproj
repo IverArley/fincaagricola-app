@@ -67,6 +67,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleLog.cs" />
+    <Compile Include="CultivosLog.cs" />
     <Compile Include="ClimaLog.cs" />
     <Compile Include="InsumosLog.cs" />
     <Compile Include="ParcelasLog.cs" />
