@@ -16,7 +16,7 @@
         <a href="#">clientes</a>
         <a href="#">clima</a>
         <a href="#">cultivo</a>
-        <a href="#">detalle</a>
+        <a href="WFDetalle.aspx">detalle</a>
         <a href="#">empleados</a>
         <a href="#">finca</a>
         <a href="#">isumos</a>
