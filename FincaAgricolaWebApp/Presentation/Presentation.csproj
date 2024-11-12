@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="Inicio.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WFDetalle.aspx" />
     <Content Include="WFCultivos.aspx" />
     <Content Include="WFProveedores.aspx" />
     <Content Include="WFClima.aspx" />
@@ -89,6 +90,13 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFDetalle.aspx.cs">
+      <DependentUpon>WFDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFDetalle.aspx.designer.cs">
+      <DependentUpon>WFDetalle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WFCultivos.aspx.cs">
       <DependentUpon>WFCultivos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
