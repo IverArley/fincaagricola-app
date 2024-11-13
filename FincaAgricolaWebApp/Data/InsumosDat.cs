@@ -30,7 +30,7 @@ namespace Data
             return objData;
         }
 
-        public bool saveInsumo(string _nombre, int _cantidad, DateTime _fecha, int _provId, int _parcId)
+        public bool saveInsumo(string _nombre, decimal _cantidad, DateTime _fecha, int _provId, int _parcId)
         {
             bool executed = false;
             int row;
@@ -42,9 +42,9 @@ namespace Data
 
             // Agrega los parámetros correspondientes
             objSelectCmd.Parameters.Add("v_insu_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_insu_cantidad ", MySqlDbType.Int32).Value = _cantidad;
+            objSelectCmd.Parameters.Add("v_insu_cantidad", MySqlDbType.Decimal).Value = _cantidad;
             objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_prov_id ", MySqlDbType.Int32).Value = _provId;
+            objSelectCmd.Parameters.Add("v_prov_id", MySqlDbType.Int32).Value = _provId;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
@@ -63,7 +63,7 @@ namespace Data
             return executed;
         }
 
-        public bool updateInsumo(int _id, string _nombre, int _cantidad, DateTime _fecha, int _provId, int _parcId)
+        public bool updateInsumo(int _id, string _nombre, decimal _cantidad, DateTime _fecha, int _provId, int _parcId)
         {
             bool executed = false;
             int row;
@@ -76,9 +76,9 @@ namespace Data
             // Agrega los parámetros correspondientes
             objSelectCmd.Parameters.Add("v_insu_id", MySqlDbType.Int32).Value = _id;
             objSelectCmd.Parameters.Add("v_insu_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_insu_cantidad ", MySqlDbType.Int32).Value = _cantidad;
+            objSelectCmd.Parameters.Add("v_insu_cantidad", MySqlDbType.Decimal).Value = _cantidad;
             objSelectCmd.Parameters.Add("v_insu_fecha_entrada", MySqlDbType.Date).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_prov_id ", MySqlDbType.Int32).Value = _provId;
+            objSelectCmd.Parameters.Add("v_prov_id", MySqlDbType.Int32).Value = _provId;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try

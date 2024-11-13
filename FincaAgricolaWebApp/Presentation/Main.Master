@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
-
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
 <!DOCTYPE html>
 
 <html>
@@ -12,19 +11,19 @@
 <body>
     <form id="form1" runat="server">
         <%-- dentro del formulario --%>
-        <a href="Inicio.aspx">incio</a>
-        <a href="#">clientes</a>
-        <a href="#">clima</a>
-        <a href="#">cultivo</a>
-        <a href="#">detalle</a>
-        <a href="#">empleados</a>
-        <a href="#">finca</a>
-        <a href="#">isumos</a>
-        <a href="#">maquinaria</a>
-        <a href="#">parcelas</a>
-        <a href="#">producto</a>
-        <a href="#">proveedores</a>
-        <a href="#">riego</a>
+        <a href="Inicio.aspx">incio</a>        
+        <a href="WFClientes.aspx">clientes</a>
+        <a href="WFClima.aspx">clima</a>
+        <a href="WFCultivos.aspx">cultivo</a>
+        <a href="WFDetalle.aspx">detalle</a>
+        <a href="WFEmpleados.aspx">empleados</a>
+        <a href="WFFinca.aspx">finca</a>
+        <a href="WFInsumos.aspx">isumos</a>
+        <a href="WFMaquinarias.aspx">maquinaria</a>
+        <a href="WFParcelas.aspx">parcelas</a>
+        <a href="WFProducto.aspx">producto</a>
+        <a href="WFProveedores.aspx">proveedores</a>
+        <a href="WFRiego.aspx">riego</a>
         <a href="WFVentas.aspx">venta</a>
         <a href="#">cerrar sesion</a>
         <div>
