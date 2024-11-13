@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Runtime.Remoting;
 using System.Web;
 
 namespace Data
@@ -33,7 +32,7 @@ namespace Data
             return objData;
         }
 
-        public bool saveRiego(DateTime _fecha, int _parcId)
+        public bool saveRiego(int _parcId, DateTime _fecha)
         {
             bool executed = false;
             int row;
@@ -44,8 +43,8 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_rieg_fecha", MySqlDbType.Date).Value = _fecha;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
+            objSelectCmd.Parameters.Add("v_rieg_fecha", MySqlDbType.Date).Value = _fecha;
 
             try
             {
@@ -63,7 +62,7 @@ namespace Data
             return executed;
         }
 
-        public bool updateRiego(int _id, DateTime _fecha, int _parcId)
+        public bool updateRiego(int _id, int _parcId, DateTime _fecha)
         {
             bool executed = false;
             int row;
