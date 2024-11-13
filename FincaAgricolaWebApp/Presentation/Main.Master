@@ -20,7 +20,7 @@
         <a href="#">finca</a>
         <a href="WFInsumos.aspx">isumos</a>
         <a href="WFMaquinarias.aspx">maquinaria</a>
-        <a href="#">parcelas</a>
+        <a href="WFParcelas.aspx">parcelas</a>
         <a href="#">producto</a>
         <a href="WFProveedores.aspx">proveedores</a>
         <a href="WFRiego.aspx">riego</a>
