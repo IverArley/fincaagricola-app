@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Inicio.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WFFinca.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Inicio.aspx.cs">
@@ -86,6 +87,13 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFFinca.aspx.cs">
+      <DependentUpon>WFFinca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFFinca.aspx.designer.cs">
+      <DependentUpon>WFFinca.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />
