@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-﻿using System;
-using System.Collections.Generic;
-=======
 ﻿using Data;
 using System;
 using System.Collections.Generic;
 using System.Data;
->>>>>>> df6f2aeb4be94320fd1962e9d9050686ac0a66b5
 using System.Linq;
 using System.Web;
 
@@ -14,9 +9,6 @@ namespace Logic
 {
     public class ClientesLog
     {
-<<<<<<< HEAD
-        ClientesDat
-=======
         ClientesDat objClie = new ClientesDat();
 
         public DataSet showClientes()
@@ -43,6 +35,5 @@ namespace Logic
         {
             return objClie.deleteClientes(_id);
         }
->>>>>>> df6f2aeb4be94320fd1962e9d9050686ac0a66b5
     }
 }
