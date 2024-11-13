@@ -17,14 +17,14 @@
         <a href="WFCultivos.aspx">cultivo</a>
         <a href="WFDetalle.aspx">detalle</a>
         <a href="WFEmpleados.aspx">empleados</a>
-        <a href="#">finca</a>
+        <a href="WFFinca.aspx">finca</a>
         <a href="WFInsumos.aspx">isumos</a>
         <a href="WFMaquinarias.aspx">maquinaria</a>
         <a href="WFParcelas.aspx">parcelas</a>
         <a href="WFProducto.aspx">producto</a>
         <a href="WFProveedores.aspx">proveedores</a>
         <a href="WFRiego.aspx">riego</a>
-        <a href="#">venta</a>
+        <a href="WFVentas.aspx">venta</a>
         <a href="#">cerrar sesion</a>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
