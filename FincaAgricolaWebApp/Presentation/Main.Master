@@ -11,12 +11,12 @@
 <body>
     <form id="form1" runat="server">
         <%-- dentro del formulario --%>
-        <a href="Inicio.aspx">incio</a>
+        <a href="Inicio.aspx">incio</a>        
         <a href="WFClientes.aspx">clientes</a>
         <a href="WFClima.aspx">clima</a>
         <a href="WFCultivos.aspx">cultivo</a>
         <a href="WFDetalle.aspx">detalle</a>
-        <a href="#">empleados</a>
+        <a href="WFEmpleados.aspx">empleados</a>
         <a href="#">finca</a>
         <a href="WFInsumos.aspx">isumos</a>
         <a href="WFMaquinarias.aspx">maquinaria</a>
