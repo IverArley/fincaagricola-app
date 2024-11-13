@@ -18,7 +18,7 @@
         <a href="#">cultivo</a>
         <a href="#">detalle</a>
         <a href="#">empleados</a>
-        <a href="#">finca</a>
+        <a href="WFFinca.aspx">finca</a>
         <a href="#">isumos</a>
         <a href="#">maquinaria</a>
         <a href="WFParcelas.aspx">parcelas</a>
