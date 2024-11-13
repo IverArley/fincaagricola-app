@@ -19,15 +19,15 @@ namespace Logic
         }
 
         //Metodo para guardar un nuevo finca
-        public bool saveRiego(DateTime _fecha, int _parcId)
+        public bool saveRiego(int _parcId, DateTime _fecha)
         {
-            return objRie.saveRiego(_fecha, _parcId);
+            return objRie.saveRiego(_parcId, _fecha);
         }
 
         //Metodo para actulizar un finca
-        public bool updateRiego(int _id, DateTime _fecha, int _parcId)
+        public bool updateRiego(int _id, int _parcId, DateTime _fecha)
         {
-            return objRie.updateRiego(_id, _fecha, _parcId);
+            return objRie.updateRiego(_id, _parcId, _fecha);
         }
 
         //Metodo para borrar una finca

@@ -57,7 +57,7 @@ namespace Presentation
             if (DateTime.TryParse(TBFecha.Text, out _fecha))
             {
                 _parcId = Convert.ToInt32(DDLParcelas.SelectedValue);
-                bool executed = objRie.saveRiego(_fecha, _parcId);
+                bool executed = objRie.saveRiego(_parcId, _fecha);
 
                 if (executed)
                 {
@@ -82,7 +82,7 @@ namespace Presentation
             {
                 _id = Convert.ToInt32(HFRiegoId.Value);
                 _parcId = Convert.ToInt32(DDLParcelas.SelectedValue);
-                bool executed = objRie.updateRiego(_id, _fecha, _parcId);
+                bool executed = objRie.updateRiego(_id, _parcId, _fecha);
 
                 if (executed)
                 {

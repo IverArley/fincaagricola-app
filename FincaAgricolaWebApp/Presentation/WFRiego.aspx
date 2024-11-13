@@ -6,13 +6,13 @@
     <h1>Gestion de riego</h1>
     <asp:HiddenField ID="HFRiegoId" runat="server" />
     <br />
-    <%--Fecha--%>
-    <asp:Label ID="Label2" runat="server" Text="Ingrese la fecha"></asp:Label>
-    <asp:TextBox ID="TBFecha" runat="server" TextMode="Date"></asp:TextBox>
-    <br />
     <%--Parcela--%>
-    <asp:Label ID="Label3" runat="server" Text="Seleccione la parcela"></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text="Seleccione la parcela"></asp:Label>
     <asp:DropDownList ID="DDLParcelas" runat="server"></asp:DropDownList>
+    <br />
+    <%--Fecha--%>
+    <asp:Label ID="Label3" runat="server" Text="Ingrese la fecha"></asp:Label>
+    <asp:TextBox ID="TBFecha" runat="server" TextMode="Date"></asp:TextBox>
     <br />
     <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click" />
     <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar" OnClick="BtnUpdate_Click" />

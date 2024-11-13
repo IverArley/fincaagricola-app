@@ -61,9 +61,9 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Se agregan parámetros al comando para pasar los valores del producto.
-            objSelectCmd.Parameters.Add("v_clim_fecha", MySqlDbType.VarString).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_clim_humedad", MySqlDbType.VarString).Value = _humedad;
-            objSelectCmd.Parameters.Add("v_clim_temperatura", MySqlDbType.Int32).Value = _temperatura;
+            objSelectCmd.Parameters.Add("v_clim_fecha", MySqlDbType.Date).Value = _fecha;
+            objSelectCmd.Parameters.Add("v_clim_humedad", MySqlDbType.Double).Value = _humedad;
+            objSelectCmd.Parameters.Add("v_clim_temperatura", MySqlDbType.Double).Value = _temperatura;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
@@ -100,10 +100,10 @@ namespace Data
 
             // Se agregan parámetros al comando para pasar los valores del producto.
             objSelectCmd.Parameters.Add("v_clim_id", MySqlDbType.Int32).Value = _id;
-            objSelectCmd.Parameters.Add("v_clim_fecha", MySqlDbType.VarString).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_clim_humedad", MySqlDbType.VarString).Value = _humedad;
-            objSelectCmd.Parameters.Add("v_clim_temperatura", MySqlDbType.Int32).Value = _temperatura;
-            objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Double).Value = _parcId;
+            objSelectCmd.Parameters.Add("v_clim_fecha", MySqlDbType.Date).Value = _fecha;
+            objSelectCmd.Parameters.Add("v_clim_humedad", MySqlDbType.Double).Value = _humedad;
+            objSelectCmd.Parameters.Add("v_clim_temperatura", MySqlDbType.Double).Value = _temperatura;
+            objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
             {
