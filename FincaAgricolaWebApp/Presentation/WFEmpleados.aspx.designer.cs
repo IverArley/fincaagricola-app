@@ -15,13 +15,13 @@ namespace Presentation
     {
 
         /// <summary>
-        /// Control HFClienteId.
+        /// Control HFEmpleadoId.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HFClienteId;
+        protected global::System.Web.UI.WebControls.HiddenField HFEmpleadoId;
 
         /// <summary>
         /// Control LblNombreEmpleados.
@@ -69,13 +69,13 @@ namespace Presentation
         protected global::System.Web.UI.WebControls.Label LblFechaContratacionEmpleados;
 
         /// <summary>
-        /// Control TBTamano.
+        /// Control TBFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBTamano;
+        protected global::System.Web.UI.WebControls.TextBox TBFecha;
 
         /// <summary>
         /// Control LblParcelaEmpleados.
@@ -87,13 +87,22 @@ namespace Presentation
         protected global::System.Web.UI.WebControls.Label LblParcelaEmpleados;
 
         /// <summary>
-        /// Control TBParcela.
+        /// Control DDLParcelas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBParcela;
+        protected global::System.Web.UI.WebControls.DropDownList DDLParcelas;
+
+        /// <summary>
+        /// Control LblMsj.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMsj;
 
         /// <summary>
         /// Control BtnSave.

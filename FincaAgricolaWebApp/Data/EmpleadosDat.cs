@@ -30,7 +30,7 @@ namespace Data
             return objData;
         }
 
-        public bool saveEmpleado(string _nombre, string _contacto, string _cargo, int _parcId)
+        public bool saveEmpleado(string _nombre, string _rol, DateTime _fecha, int _parcId)
         {
             bool executed = false;
             int row;
@@ -41,9 +41,9 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_emp_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_emp_contacto", MySqlDbType.VarChar).Value = _contacto;
-            objSelectCmd.Parameters.Add("v_emp_cargo", MySqlDbType.VarChar).Value = _cargo;
+            objSelectCmd.Parameters.Add("v_empl_nombre", MySqlDbType.VarChar).Value = _nombre;
+            objSelectCmd.Parameters.Add("v_empl_rol", MySqlDbType.VarChar).Value = _rol;
+            objSelectCmd.Parameters.Add("v_empl_fecha_contratacion", MySqlDbType.Date).Value = _fecha;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
@@ -62,7 +62,7 @@ namespace Data
             return executed;
         }
 
-        public bool updateEmpleado(int _id, string _nombre, string _contacto, string _cargo, int _parcId)
+        public bool updateEmpleado(int _id, string _nombre, string _rol, DateTime _fecha, int _parcId)
         {
             bool executed = false;
             int row;
@@ -73,10 +73,10 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_emp_id", MySqlDbType.Int32).Value = _id;
-            objSelectCmd.Parameters.Add("v_emp_nombre", MySqlDbType.VarChar).Value = _nombre;
-            objSelectCmd.Parameters.Add("v_emp_contacto", MySqlDbType.VarChar).Value = _contacto;
-            objSelectCmd.Parameters.Add("v_emp_cargo", MySqlDbType.VarChar).Value = _cargo;
+            objSelectCmd.Parameters.Add("v_empl_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_empl_nombre", MySqlDbType.VarChar).Value = _nombre;
+            objSelectCmd.Parameters.Add("v_empl_rol", MySqlDbType.VarChar).Value = _rol;
+            objSelectCmd.Parameters.Add("v_empl_fecha_contratacion", MySqlDbType.Date).Value = _fecha;
             objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _parcId;
 
             try
@@ -106,7 +106,7 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega el parámetro correspondiente
-            objSelectCmd.Parameters.Add("v_emp_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_empl_id", MySqlDbType.Int32).Value = _id;
 
             try
             {
