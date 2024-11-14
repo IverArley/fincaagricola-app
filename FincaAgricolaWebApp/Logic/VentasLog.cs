@@ -1,9 +1,6 @@
 ﻿using Data;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 
 namespace Logic
 {
@@ -11,36 +8,33 @@ namespace Logic
     {
         VentasDat objVen = new VentasDat();
 
-
         public DataSet showVentas()
         {
-
             return objVen.showVentas();
         }
 
-        //Metodo para mostrar unicamente el id y el nombre
+        // Método para mostrar únicamente el ID y el nombre
         public DataSet showVentassDDL()
         {
             return objVen.showVentassDDL();
         }
 
-        //Metodo para guardar un nuevo finca
-        public bool saveVentas(DateTime _fecha, double _monto)
+        // Método para guardar una nueva venta
+        public bool saveVentas(int clieId, DateTime _fecha, decimal _monto)
         {
-            return objVen.saveVentas(_fecha, _monto);
+            return objVen.saveVentas(clieId, _fecha, _monto);
         }
 
-        //Metodo para actulizar un finca
-        public bool updateVentas(int _id, DateTime _fecha, double _monto, int clieId)
+        // Método para actualizar una venta
+        public bool updateVentas(int _id, int clieId, DateTime _fecha, decimal _monto)
         {
-            return objVen.updateVentas(_id, _fecha, _monto, clieId);
+            return objVen.updateVentas(_id, clieId, _fecha, _monto);
         }
 
-        //Metodo para borrar una finca
-        public bool deleteFinca(int _id)
+        // Método para borrar una venta
+        public bool deleteVentas(int _id)
         {
-            return objVen.deleteFinca(_id);
-
+            return objVen.deleteVentas(_id);
         }
     }
 }

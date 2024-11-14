@@ -15,13 +15,13 @@ namespace Presentation
     {
 
         /// <summary>
-        /// Control HFClienteId.
+        /// Control HFProductoID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HFClienteId;
+        protected global::System.Web.UI.WebControls.HiddenField HFProductoID;
 
         /// <summary>
         /// Control LblNombreProductos.
@@ -69,31 +69,31 @@ namespace Presentation
         protected global::System.Web.UI.WebControls.Label LblPrecioProductos;
 
         /// <summary>
-        /// Control TBTamano.
+        /// Control TBPrecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBTamano;
+        protected global::System.Web.UI.WebControls.TextBox TBPrecio;
 
         /// <summary>
-        /// Control LblParcelaProductos.
+        /// Control LabelParcelas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblParcelaProductos;
+        protected global::System.Web.UI.WebControls.Label LabelParcelas;
 
         /// <summary>
-        /// Control TBParcela.
+        /// Control DDLParcelas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBParcela;
+        protected global::System.Web.UI.WebControls.DropDownList DDLParcelas;
 
         /// <summary>
         /// Control BtnSave.
@@ -112,6 +112,15 @@ namespace Presentation
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUpdate;
+
+        /// <summary>
+        /// Control LblMsj.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMsj;
 
         /// <summary>
         /// Control GVProductos.

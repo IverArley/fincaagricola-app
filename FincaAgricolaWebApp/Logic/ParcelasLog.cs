@@ -21,14 +21,14 @@ namespace Logic
             return objPar.showParcelaDDL();
         }
 
-        public bool saveParcela(string _ubicacion, double _tamano, string _estado, DateTime _fecha, int _provId, int _finId)
+        public bool saveParcela(string _tamano, string _ubicacion, int _finId)
         {
-            return objPar.saveParcela(_ubicacion, _tamano, _estado, _fecha, _provId, _finId);
+            return objPar.saveParcela(_tamano, _ubicacion, _finId);
         }
 
-        public bool updateParcela(int _id, string _ubicacion, double _tamano, string _estado, DateTime _fecha, int _provId, int _finId)
+        public bool updateParcela(int _id, string _tamano, string _ubicacion, int _finId)
         {
-            return objPar.updateParcela(_id, _ubicacion, _tamano, _estado, _fecha, _provId, _finId);
+            return objPar.updateParcela(_id, _tamano, _ubicacion, _finId);
         }
 
         public bool deleteParcela(int _id)

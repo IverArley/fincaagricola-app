@@ -15,67 +15,67 @@ namespace Presentation
     {
 
         /// <summary>
-        /// Control HFClienteId.
+        /// Control HFVentaID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HFClienteId;
+        protected global::System.Web.UI.WebControls.HiddenField HFVentaID;
 
         /// <summary>
-        /// Control LblClienteVentas.
+        /// Control LblClienteVenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblClienteVentas;
+        protected global::System.Web.UI.WebControls.Label LblClienteVenta;
 
         /// <summary>
-        /// Control TBCliente.
+        /// Control DDLCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBCliente;
+        protected global::System.Web.UI.WebControls.DropDownList DDLCliente;
 
         /// <summary>
-        /// Control LblFechaVentas.
+        /// Control LblFechaVenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblFechaVentas;
+        protected global::System.Web.UI.WebControls.Label LblFechaVenta;
 
         /// <summary>
-        /// Control TBUbicacion.
+        /// Control TBFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBUbicacion;
+        protected global::System.Web.UI.WebControls.TextBox TBFecha;
 
         /// <summary>
-        /// Control LblMontoVentas.
+        /// Control LblMontoVenta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblMontoVentas;
+        protected global::System.Web.UI.WebControls.Label LblMontoVenta;
 
         /// <summary>
-        /// Control TBTamano.
+        /// Control TBMonto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBTamano;
+        protected global::System.Web.UI.WebControls.TextBox TBMonto;
 
         /// <summary>
         /// Control BtnSave.
@@ -94,6 +94,15 @@ namespace Presentation
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUpdate;
+
+        /// <summary>
+        /// Control LblMsj.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMsj;
 
         /// <summary>
         /// Control GVVentas.

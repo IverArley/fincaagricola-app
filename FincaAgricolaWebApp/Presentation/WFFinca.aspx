@@ -19,7 +19,7 @@
     <br />
     <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click"/>
     <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar"  OnClick="BtnUpdate_Click"/>
-    
+    <asp:Label ID="LblMsj" runat="server" Text=""></asp:Label>
     <br />
     
     <br />
@@ -37,4 +37,3 @@
      </asp:GridView>
  </div>
 </asp:Content>
-
