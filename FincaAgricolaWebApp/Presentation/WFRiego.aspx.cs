@@ -104,7 +104,9 @@ namespace Presentation
         {
             HFRiegoId.Value = GVRiego.SelectedRow.Cells[0].Text;
             DDLParcelas.SelectedValue = GVRiego.SelectedRow.Cells[1].Text;
-            TBFecha.Text = GVRiego.SelectedRow.Cells[2].Text;
+            string fechaSeleccionada = GVRiego.SelectedRow.Cells[2].Text.Substring(0, 10);
+            DateTime fechaConvertida = DateTime.Parse(fechaSeleccionada);
+            TBFecha.Text = fechaConvertida.ToString("yyyy-MM-dd");
         }
     }
 }
