@@ -11,7 +11,7 @@
                 <asp:HiddenField ID="HFEmpleadoId" runat="server" />
                 <%-- Nombre --%>
                 <asp:Label ID="LblNombreEmpleados" runat="server" Text="Ingrese el nombre del empleado"></asp:Label>
-                <asp:TextBox ID="TBNombre" runat="server" CssClass="form-control""></asp:TextBox>
+                <asp:TextBox ID="TBNombre" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <div class="col-md-4">
                 <%-- Rol --%>
