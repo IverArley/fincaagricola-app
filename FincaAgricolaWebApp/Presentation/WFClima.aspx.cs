@@ -114,9 +114,13 @@ namespace Presentation
         {
             HFClimaId.Value = GVClima.SelectedRow.Cells[0].Text;
             DDLParcelas.SelectedValue = GVClima.SelectedRow.Cells[1].Text;
-            TBFecha.Text = GVClima.SelectedRow.Cells[2].Text;
+            string fechaSeleccionada = GVClima.SelectedRow.Cells[2].Text.Substring(0, 10);
+            DateTime fechaConvertida = DateTime.Parse(fechaSeleccionada);
+            TBFecha.Text = fechaConvertida.ToString("yyyy-MM-dd");
+
             TBHumedad.Text = GVClima.SelectedRow.Cells[3].Text;
             TBTemperatura.Text = GVClima.SelectedRow.Cells[4].Text;
+
         }
     }
 }
