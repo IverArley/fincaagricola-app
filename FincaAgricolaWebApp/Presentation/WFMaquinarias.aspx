@@ -38,13 +38,13 @@
                 <div class="col">
                     <asp:GridView ID="GVMaquinaria" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVMaquinaria_SelectedIndexChanged">
                         <Columns>
-                            <asp:BoundField DataField="maqu_id" HeaderText="ID" />
-                            <asp:BoundField DataField="maqu_tipo" HeaderText="Tipo" />
-                            <asp:BoundField DataField="maqu_fecha_adquisicion" HeaderText="Fecha de Adquisición" />
-                            <asp:BoundField DataField="maqu_estado" HeaderText="Estado" />
-                            <asp:BoundField DataField="parc_id" HeaderText="Parcela" />
-                            <asp:CommandField ShowSelectButton="True" ButtonType="Button"></asp:CommandField>
-                            <asp:CommandField ShowDeleteButton="True" ButtonType="Button"></asp:CommandField>
+                            <asp:BoundField DataField="maqu_id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                            <asp:BoundField DataField="maqu_tipo" HeaderText="Tipo" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                            <asp:BoundField DataField="maqu_fecha_adquisicion" HeaderText="Fecha de Adquisición" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                            <asp:BoundField DataField="maqu_estado" HeaderText="Estado" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                            <asp:BoundField DataField="parc_id" HeaderText="Parcela" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                            <asp:CommandField ShowSelectButton="True" ButtonType="Button" SelectText="Seleccionar" ControlStyle-CssClass="btn btn-info btn-sm" />
+                            <asp:CommandField ShowDeleteButton="True" ButtonType="Button" DeleteText="Eliminar" ControlStyle-CssClass="btn btn-danger btn-sm" />
                         </Columns>
                     </asp:GridView>
                 </div>
