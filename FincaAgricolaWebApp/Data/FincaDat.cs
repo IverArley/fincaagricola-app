@@ -79,7 +79,7 @@ namespace Data
             // Se agregan parámetros al comando para pasar los valores del producto.
             objSelectCmd.Parameters.Add("v_finc_nombre", MySqlDbType.VarString).Value = _nombre;
             objSelectCmd.Parameters.Add("v_finc_ubicacion", MySqlDbType.VarString).Value = _ubicacion;
-            objSelectCmd.Parameters.Add("v_finc_tamano", MySqlDbType.Int32).Value = _tamano;
+            objSelectCmd.Parameters.Add("v_finc_tamano", MySqlDbType.VarString).Value = _tamano;
             
             try
             {
