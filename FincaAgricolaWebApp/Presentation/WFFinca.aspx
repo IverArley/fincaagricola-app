@@ -1,60 +1,44 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="WFInsumos.aspx.cs" Inherits="Presentation.WFInsumos" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="WFFinca.aspx.cs" Inherits="Presentation.WFFinca" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 class="text-center mb-4">Gestión de Insumos</h1>
+    <h1 class="text-center mb-4">Gestión de Finca</h1>
     <div class="container">
-        <!-- Campo oculto -->
-        <asp:HiddenField ID="HFInsumoId" runat="server" />
-
+        <asp:HiddenField ID="HFClienteId" runat="server" />
+        
         <!-- Nombre -->
         <div class="mb-3">
-            <asp:Label ID="Label3" runat="server" Text="Ingrese el nombre:" AssociatedControlID="TBNombre" CssClass="form-label"></asp:Label>
-            <asp:TextBox ID="TBNombre" runat="server" CssClass="form-control" Placeholder="Ingrese el nombre del insumo"></asp:TextBox>
+            <asp:Label ID="LblNombreFinca" runat="server" Text="Ingrese el nombre" CssClass="form-label"></asp:Label>
+            <asp:TextBox ID="TBNombre" runat="server" CssClass="form-control" Placeholder="Nombre de la finca"></asp:TextBox>
         </div>
-
-        <!-- Cantidad -->
+        
+        <!-- Ubicación -->
         <div class="mb-3">
-            <asp:Label ID="Label4" runat="server" Text="Ingrese la cantidad:" AssociatedControlID="TBCantidad" CssClass="form-label"></asp:Label>
-            <asp:TextBox ID="TBCantidad" runat="server" CssClass="form-control" Placeholder="Ingrese la cantidad"></asp:TextBox>
+            <asp:Label ID="LblUbicacionFinca" runat="server" Text="Ingrese la ubicación" CssClass="form-label"></asp:Label>
+            <asp:TextBox ID="TBUbicacion" runat="server" CssClass="form-control" Placeholder="Ubicación de la finca"></asp:TextBox>
         </div>
-
-        <!-- Fecha de adquisición -->
+        
+        <!-- Tamaño -->
         <div class="mb-3">
-            <asp:Label ID="Label5" runat="server" Text="Ingrese la fecha de adquisición:" AssociatedControlID="TBFechaAdquisicion" CssClass="form-label"></asp:Label>
-            <asp:TextBox ID="TBFechaAdquisicion" runat="server" TextMode="Date" CssClass="form-control"></asp:TextBox>
+            <asp:Label ID="LblTamanoFinca" runat="server" Text="Ingrese el tamaño" CssClass="form-label"></asp:Label>
+            <asp:TextBox ID="TBTamano" runat="server" CssClass="form-control" Placeholder="Tamaño de la finca"></asp:TextBox>
         </div>
-
-        <!-- Proveedor -->
-        <div class="mb-3">
-            <asp:Label ID="LabelProveedor" runat="server" Text="Seleccione el proveedor:" AssociatedControlID="DDLProveedores" CssClass="form-label"></asp:Label>
-            <asp:DropDownList ID="DDLProveedores" runat="server" CssClass="form-select"></asp:DropDownList>
-        </div>
-
-        <!-- Parcela -->
-        <div class="mb-3">
-            <asp:Label ID="LabelParcela" runat="server" Text="Seleccione la parcela:" AssociatedControlID="DDLParcelas" CssClass="form-label"></asp:Label>
-            <asp:DropDownList ID="DDLParcelas" runat="server" CssClass="form-select"></asp:DropDownList>
-        </div>
-
+        
         <!-- Botones de acción -->
         <div class="mb-3 text-center">
             <asp:Button ID="BtnSave" runat="server" Text="Guardar" CssClass="btn btn-success mx-2" OnClick="BtnSave_Click" />
             <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar" CssClass="btn btn-primary mx-2" OnClick="BtnUpdate_Click" />
             <asp:Label ID="LblMsj" runat="server" Text="" CssClass="text-success"></asp:Label>
         </div>
-
+        
         <!-- GridView -->
         <div class="table-responsive mt-4">
-            <asp:GridView ID="GVInsumos" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVInsumos_SelectedIndexChanged">
+            <asp:GridView ID="GVFinca" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVFinca_SelectedIndexChanged">
                 <Columns>
-                    <asp:BoundField DataField="insu_id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
-                    <asp:BoundField DataField="insu_nombre" HeaderText="Nombre" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
-                    <asp:BoundField DataField="insu_cantidad" HeaderText="Cantidad" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
-                    <asp:BoundField DataField="insu_fecha_entrada" HeaderText="Fecha de Adquisición" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
-                    <asp:BoundField DataField="prov_id" HeaderText="Proveedor" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
-                    <asp:BoundField DataField="parc_id" HeaderText="Parcela" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                    <asp:BoundField DataField="finc_id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                    <asp:BoundField DataField="finc_nombre" HeaderText="Nombre" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                    <asp:BoundField DataField="finc_ubicacion" HeaderText="Ubicación" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
+                    <asp:BoundField DataField="finc_tamano" HeaderText="Tamaño" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
                     <asp:CommandField ShowSelectButton="True" ButtonType="Button" ControlStyle-CssClass="btn btn-info btn-sm" SelectText="Seleccionar" />
                     <asp:CommandField ShowDeleteButton="True" ButtonType="Button" ControlStyle-CssClass="btn btn-danger btn-sm" DeleteText="Eliminar" />
                 </Columns>
@@ -62,3 +46,4 @@
         </div>
     </div>
 </asp:Content>
+
