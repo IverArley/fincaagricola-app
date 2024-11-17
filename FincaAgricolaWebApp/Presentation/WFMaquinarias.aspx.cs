@@ -114,7 +114,9 @@ namespace Presentation
             HFMaquinariaId.Value = GVMaquinaria.SelectedRow.Cells[0].Text;
             TBTipo.Text = GVMaquinaria.SelectedRow.Cells[1].Text;
             TBEstado.Text = GVMaquinaria.SelectedRow.Cells[3].Text;
-            TBFechaAdquisicion.Text = GVMaquinaria.SelectedRow.Cells[2].Text;
+            string fechaSeleccionada = GVMaquinaria.SelectedRow.Cells[2].Text.Substring(0, 10);
+            DateTime fechaConvertida = DateTime.Parse(fechaSeleccionada);
+            TBFechaAdquisicion.Text = fechaConvertida.ToString("yyyy-MM-dd");
             DDLParcelas.SelectedValue = GVMaquinaria.SelectedRow.Cells[4].Text;
         }
     }
