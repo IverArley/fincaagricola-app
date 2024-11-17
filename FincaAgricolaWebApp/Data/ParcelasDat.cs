@@ -48,7 +48,7 @@ namespace Data
             return objData;
         }
 
-        public bool saveParcela(string _ubicacion, double _tamano, string _estado, DateTime _fecha, int _provId, int _finId)
+        public bool saveParcela(string _tamano, string _ubicacion, int _finId)
         {
             bool executed = false;
             int row;
@@ -59,11 +59,9 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
+            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.VarChar).Value = _tamano;
             objSelectCmd.Parameters.Add("v_par_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
-            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.Int32).Value = _tamano;
-            objSelectCmd.Parameters.Add("v_par_estado", MySqlDbType.VarChar).Value = _estado;
-            objSelectCmd.Parameters.Add("v_par_fecha_revision", MySqlDbType.Date).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_fin_id", MySqlDbType.Int32).Value = _finId;
+            objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _finId;
 
             try
             {
@@ -81,7 +79,7 @@ namespace Data
             return executed;
         }
 
-        public bool updateParcela(int _id, string _ubicacion, double _tamano, string _estado, DateTime _fecha, int _provId, int _finId)
+        public bool updateParcela(int _id, string _tamano, string _ubicacion, int _finId)
         {
             bool executed = false;
             int row;
@@ -93,11 +91,9 @@ namespace Data
 
             // Agrega los parámetros correspondientes
             objSelectCmd.Parameters.Add("v_par_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.VarChar).Value = _tamano;
             objSelectCmd.Parameters.Add("v_par_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
-            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.Int32).Value = _tamano;
-            objSelectCmd.Parameters.Add("v_par_estado", MySqlDbType.VarChar).Value = _estado;
-            objSelectCmd.Parameters.Add("v_par_fecha_revision", MySqlDbType.Date).Value = _fecha;
-            objSelectCmd.Parameters.Add("v_fin_id", MySqlDbType.Int32).Value = _finId;
+            objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _finId;
 
             try
             {

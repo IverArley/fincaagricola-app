@@ -15,13 +15,13 @@ namespace Presentation
     {
 
         /// <summary>
-        /// Control HFClienteId.
+        /// Control HFParcelasID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField HFClienteId;
+        protected global::System.Web.UI.WebControls.HiddenField HFParcelasID;
 
         /// <summary>
         /// Control LblTamanoParcelas.
@@ -69,13 +69,13 @@ namespace Presentation
         protected global::System.Web.UI.WebControls.Label LblFincaParcelas;
 
         /// <summary>
-        /// Control TBFinca.
+        /// Control DDLFinca.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBFinca;
+        protected global::System.Web.UI.WebControls.DropDownList DDLFinca;
 
         /// <summary>
         /// Control BtnSave.
@@ -94,6 +94,15 @@ namespace Presentation
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUpdate;
+
+        /// <summary>
+        /// Control LblMsj.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblMsj;
 
         /// <summary>
         /// Control GVParcelas.

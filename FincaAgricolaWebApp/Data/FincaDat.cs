@@ -117,7 +117,7 @@ namespace Data
             objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _id;
             objSelectCmd.Parameters.Add("v_finc_nombre", MySqlDbType.VarString).Value = _nombre;
             objSelectCmd.Parameters.Add("v_finc_ubicacion", MySqlDbType.VarString).Value = _ubicacion;
-            objSelectCmd.Parameters.Add("v_finc_tamano", MySqlDbType.Int32).Value = _tamano;
+            objSelectCmd.Parameters.Add("v_finc_tamano", MySqlDbType.VarChar).Value = _tamano;
             
             try
             {

@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Gestion Parcelas</h1>
-    <asp:HiddenField ID="HFClienteId" runat="server" />
+    <asp:HiddenField ID="HFParcelasID" runat="server" />
     <br />
      <%--Tamaño--%>
     <asp:Label ID="LblTamanoParcelas" runat="server" Text="Ingrese el tamaño"></asp:Label>
@@ -15,11 +15,12 @@
     <br />
     <%--Finca--%>
     <asp:Label ID="LblFincaParcelas" runat="server" Text="Ingrese la finca"></asp:Label>
-    <asp:TextBox ID="TBFinca" runat="server" style="margin-left: 20px"></asp:TextBox>
+    <asp:DropDownList ID="DDLFinca" runat="server"></asp:DropDownList>
     <br />
 
     <asp:Button ID="BtnSave" runat="server" Text="Guardar" OnClick="BtnSave_Click"/>
     <asp:Button ID="BtnUpdate" runat="server" Text="Actualizar"  OnClick="BtnUpdate_Click"/>
+    <asp:Label ID="LblMsj" runat="server" Text=""></asp:Label>
     <br />
     <br />
      <div>
@@ -36,4 +37,3 @@
      </asp:GridView>
  </div>
 </asp:Content>
-
