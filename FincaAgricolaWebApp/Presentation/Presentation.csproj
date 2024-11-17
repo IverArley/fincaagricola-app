@@ -1,4 +1,4 @@
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -66,6 +66,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inicio.aspx" />
+    <Content Include="resources\css\bootstrap-grid.css" />
+    <Content Include="resources\css\bootstrap-grid.min.css" />
+    <Content Include="resources\css\bootstrap-grid.rtl.css" />
+    <Content Include="resources\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="resources\css\bootstrap-reboot.css" />
+    <Content Include="resources\css\bootstrap-reboot.min.css" />
+    <Content Include="resources\css\bootstrap-reboot.rtl.css" />
+    <Content Include="resources\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="resources\css\bootstrap-utilities.css" />
+    <Content Include="resources\css\bootstrap-utilities.min.css" />
+    <Content Include="resources\css\bootstrap-utilities.rtl.css" />
+    <Content Include="resources\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="resources\css\bootstrap.css" />
+    <Content Include="resources\css\bootstrap.min.css" />
+    <Content Include="resources\css\bootstrap.rtl.css" />
+    <Content Include="resources\css\bootstrap.rtl.min.css" />
+    <Content Include="resources\Imagenes\Logo.png" />
+    <Content Include="resources\Imagenes\Inicio1.jpg" />
+    <Content Include="resources\Imagenes\Inicio2.jpg" />
+    <Content Include="resources\Imagenes\Inicio3.jpg" />
+    <Content Include="resources\js\bootstrap.bundle.js" />
+    <Content Include="resources\js\bootstrap.bundle.min.js" />
+    <Content Include="resources\js\bootstrap.esm.js" />
+    <Content Include="resources\js\bootstrap.esm.min.js" />
+    <Content Include="resources\js\bootstrap.js" />
+    <Content Include="resources\js\bootstrap.min.js" />
     <Content Include="Web.config" />
     <Content Include="WFVentas.aspx" />
     <Content Include="WFProducto.aspx" />
@@ -192,6 +218,28 @@
   <ItemGroup>
     <Content Include="Main.Master" />
     <None Include="packages.config" />
+    <Content Include="resources\css\bootstrap-grid.css.map" />
+    <Content Include="resources\css\bootstrap-grid.min.css.map" />
+    <Content Include="resources\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="resources\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="resources\css\bootstrap-reboot.css.map" />
+    <Content Include="resources\css\bootstrap-reboot.min.css.map" />
+    <Content Include="resources\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="resources\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="resources\css\bootstrap-utilities.css.map" />
+    <Content Include="resources\css\bootstrap-utilities.min.css.map" />
+    <Content Include="resources\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="resources\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="resources\css\bootstrap.css.map" />
+    <Content Include="resources\css\bootstrap.min.css.map" />
+    <Content Include="resources\css\bootstrap.rtl.css.map" />
+    <Content Include="resources\css\bootstrap.rtl.min.css.map" />
+    <Content Include="resources\js\bootstrap.bundle.js.map" />
+    <Content Include="resources\js\bootstrap.bundle.min.js.map" />
+    <Content Include="resources\js\bootstrap.esm.js.map" />
+    <Content Include="resources\js\bootstrap.esm.min.js.map" />
+    <Content Include="resources\js\bootstrap.js.map" />
+    <Content Include="resources\js\bootstrap.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -205,6 +253,7 @@
       <Name>Logic</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
