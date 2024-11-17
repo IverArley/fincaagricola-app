@@ -129,7 +129,9 @@ namespace Presentation
             // Asigna los valores de la fila a los campos correspondientes
             HFVentaID.Value = row.Cells[0].Text;
             DDLCliente.SelectedValue = row.Cells[1].Text;
-            TBFecha.Text = row.Cells[2].Text;
+            string fechaSeleccionada = GVVentas.SelectedRow.Cells[2].Text.Substring(0, 10);
+            DateTime fechaConvertida = DateTime.Parse(fechaSeleccionada);
+            TBFecha.Text = fechaConvertida.ToString("yyyy-MM-dd");
             TBMonto.Text = row.Cells[3].Text;
         }
 
