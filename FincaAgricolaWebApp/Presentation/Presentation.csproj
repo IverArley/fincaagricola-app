@@ -82,10 +82,10 @@
     <Content Include="resources\css\bootstrap.min.css" />
     <Content Include="resources\css\bootstrap.rtl.css" />
     <Content Include="resources\css\bootstrap.rtl.min.css" />
+    <Content Include="resources\Imagenes\inicio1.jpg" />
+    <Content Include="resources\Imagenes\inicio2.jpg" />
+    <Content Include="resources\Imagenes\inicio3.jpg" />
     <Content Include="resources\Imagenes\Logo.png" />
-    <Content Include="resources\Imagenes\Inicio1.jpg" />
-    <Content Include="resources\Imagenes\Inicio2.jpg" />
-    <Content Include="resources\Imagenes\Inicio3.jpg" />
     <Content Include="resources\js\bootstrap.bundle.js" />
     <Content Include="resources\js\bootstrap.bundle.min.js" />
     <Content Include="resources\js\bootstrap.esm.js" />

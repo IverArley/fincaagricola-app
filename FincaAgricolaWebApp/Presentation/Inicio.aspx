@@ -15,7 +15,7 @@
                 <img src="resources/imagenes/inicio2.jpg" class="d-block w-100" alt="Descripción de la imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="resources/imagenes/inicio4.jpg" class="d-block w-100" alt="Descripción de la imagen 3">
+                <img src="resources/imagenes/inicio3.jpg" class="d-block w-100" alt="Descripción de la imagen 3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

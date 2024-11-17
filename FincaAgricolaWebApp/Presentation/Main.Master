@@ -12,6 +12,11 @@
     <link href="resources/css/styles.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
     <style>
+        
+        .navbar-brand span {
+            font-size: 1.8rem; /* Ajusta este valor según sea necesario */
+            font-weight: bold;
+        }
         body {
             background-color: #f9f9f9;
             font-family: Arial, sans-serif;
