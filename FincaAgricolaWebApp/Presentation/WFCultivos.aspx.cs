@@ -114,7 +114,9 @@ namespace Presentation
         {
             HFCultivoId.Value = GVCultivo.SelectedRow.Cells[0].Text;
             TBNombre.Text = GVCultivo.SelectedRow.Cells[1].Text;
-            TBFecha.Text = GVCultivo.SelectedRow.Cells[2].Text;
+            string fechaSeleccionada = GVCultivo.SelectedRow.Cells[2].Text.Substring(0, 10);
+            DateTime fechaConvertida = DateTime.Parse(fechaSeleccionada);
+            TBFecha.Text = fechaConvertida.ToString("yyyy-MM-dd");
             TBEstado.Text = GVCultivo.SelectedRow.Cells[3].Text;
             DDLParcelas.SelectedValue = GVCultivo.SelectedRow.Cells[4].Text;
         }
