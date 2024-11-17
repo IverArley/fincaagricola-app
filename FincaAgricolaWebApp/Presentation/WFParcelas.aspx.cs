@@ -63,7 +63,7 @@ namespace Presentation
             executed = objPar.saveParcela( _tamano,  _ubicacion, _finId);
             if (executed)
             {
-                LblMsj.Text = "El producto se guardo exitosamente";
+                LblMsj.Text = "La parcela se guardo exitosamente";
                 clear();//Se invoca el metodo para limpiar los TextBox Y DDL
                 showParcela();//se invoca el metodo para guardar los productos
             }
@@ -85,7 +85,7 @@ namespace Presentation
             executed = objPar.updateParcela(_id, _tamano, _ubicacion, _finId);
             if (executed)
             {
-                LblMsj.Text = "El producto se actualizo exitosamente";
+                LblMsj.Text = "El parcela se actualizo exitosamente";
                 clear();//Se invoca el metodo para limpiar los TextBox Y DDL
                 showParcela();//se invoca el metodo para guardar los productos
             }

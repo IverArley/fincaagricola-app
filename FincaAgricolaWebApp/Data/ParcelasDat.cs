@@ -59,8 +59,8 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.VarChar).Value = _tamano;
-            objSelectCmd.Parameters.Add("v_par_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
+            objSelectCmd.Parameters.Add("v_parc_tamano", MySqlDbType.VarChar).Value = _tamano;
+            objSelectCmd.Parameters.Add("v_parc_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
             objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _finId;
 
             try
@@ -90,9 +90,9 @@ namespace Data
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
             // Agrega los parámetros correspondientes
-            objSelectCmd.Parameters.Add("v_par_id", MySqlDbType.Int32).Value = _id;
-            objSelectCmd.Parameters.Add("v_par_tamano", MySqlDbType.VarChar).Value = _tamano;
-            objSelectCmd.Parameters.Add("v_par_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
+            objSelectCmd.Parameters.Add("v_parc_id", MySqlDbType.Int32).Value = _id;
+            objSelectCmd.Parameters.Add("v_parc_tamano", MySqlDbType.VarChar).Value = _tamano;
+            objSelectCmd.Parameters.Add("v_parc_ubicacion", MySqlDbType.VarChar).Value = _ubicacion;
             objSelectCmd.Parameters.Add("v_finc_id", MySqlDbType.Int32).Value = _finId;
 
             try
