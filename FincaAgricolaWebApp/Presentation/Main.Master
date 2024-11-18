@@ -94,6 +94,7 @@
                                 <li><a class="dropdown-item" href="WFRiego.aspx">Riego</a></li>
                                 <li><a class="dropdown-item" href="WFVentas.aspx">Ventas</a></li>
                                 <li><a class="dropdown-item" href="WFDashboard.aspx">Dashboard</a></li>
+                                 <li><a class="dropdown-item" href="WFArduino.aspx">Arduino</a></li>
                             </ul>
                         </li>
                     </ul>

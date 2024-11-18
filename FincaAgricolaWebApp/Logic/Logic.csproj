@@ -67,6 +67,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArduinoLog.cs" />
     <Compile Include="EmpleadosLog.cs" />
     <Compile Include="FincaLog.cs" />
     <Compile Include="MaquinariasLog.cs" />
