@@ -93,6 +93,7 @@
     <Content Include="resources\js\bootstrap.js" />
     <Content Include="resources\js\bootstrap.min.js" />
     <Content Include="Web.config" />
+    <Content Include="WFDashboard.aspx" />
     <Content Include="WFVentas.aspx" />
     <Content Include="WFProducto.aspx" />
     <Content Include="WFFinca.aspx" />
@@ -123,6 +124,13 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WFDashboard.aspx.cs">
+      <DependentUpon>WFDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WFDashboard.aspx.designer.cs">
+      <DependentUpon>WFDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WFVentas.aspx.cs">
       <DependentUpon>WFVentas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
