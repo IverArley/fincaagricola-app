@@ -31,7 +31,8 @@
         <div class="row">
             <div class="col">
                 <%-- Tabla de datos --%>
-                <asp:GridView ID="GVControlRiego" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVControlRiego_SelectedIndexChanged">
+                <asp:GridView ID="GVControlRiego" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVControlRiego_SelectedIndexChanged"
+                    OnRowDeleting="GVControlRiego_RowDeleting" DataKeyNames="id">
                     <Columns>
                         <asp:BoundField DataField="id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
                         <asp:BoundField DataField="humedad" HeaderText="Humedad (%)" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />

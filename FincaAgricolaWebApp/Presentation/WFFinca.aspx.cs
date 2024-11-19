@@ -87,5 +87,23 @@ namespace Presentation
             TBUbicacion.Text = GVFinca.SelectedRow.Cells[2].Text;
             TBTamano.Text = GVFinca.SelectedRow.Cells[3].Text;
         }
-    }
+
+        protected void GVFinca_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int _id = Convert.ToInt32(GVFinca.DataKeys[e.RowIndex].Values[0]);
+            bool executed = objFinca.deleteFinca(_id);
+
+            if (executed)
+            {
+                LblMsj.Text = "La finca se eliminó exitosamente.";
+                GVFinca.EditIndex = -1;
+                showFinca(); // Actualiza el GridView
+            }
+            else
+            {
+                LblMsj.Text = "Error al eliminar la finca.";
+            }
+        }
+    }  
+
 }

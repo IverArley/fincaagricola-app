@@ -29,7 +29,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <asp:GridView ID="GVClientes" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVClientes_SelectedIndexChanged">
+                <asp:GridView ID="GVClientes" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="GVClientes_SelectedIndexChanged"
+                           OnRowDeleting="GVClientes_RowDeleting" DataKeyNames="clie_id">
                     <Columns>
                         <asp:BoundField DataField="clie_id" HeaderText="Id" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
                         <asp:BoundField DataField="clie_nombre" HeaderText="Nombre" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />

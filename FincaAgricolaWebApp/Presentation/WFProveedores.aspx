@@ -35,7 +35,8 @@
 
         <!-- GridView para mostrar proveedores -->
         <div class="mt-4">
-            <asp:GridView ID="GVProveedor" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVProveedor_SelectedIndexChanged">
+            <asp:GridView ID="GVProveedor" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVProveedor_SelectedIndexChanged"
+                 OnRowDeleting="GVProveedor_RowDeleting" DataKeyNames="prov_id">
                 <Columns>
                     <asp:BoundField DataField="prov_id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
                     <asp:BoundField DataField="prov_nombre" HeaderText="Nombre" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
