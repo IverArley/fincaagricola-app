@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Presentation.Main" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finca Agrícola</title>
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link href="resources/css/styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        
+        .navbar-brand span {
+            font-size: 1.8rem; /* Ajusta este valor según sea necesario */
+            font-weight: bold;
+        }
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #4caf50, #2e7d32);
+        }
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .nav-link {
+            font-weight: bold;
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #c8e6c9 !important;
+        }
+        .dropdown-menu {
+            background-color: #4caf50;
+            border: none;
+        }
+        .dropdown-item {
+            color: white;
+        }
+        .dropdown-item:hover {
+            background-color: #66bb6a;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="resources/imagenes/Logo.png" alt="Logo Finca" class="img-fluid" />
+                    <span>Finca Agrícola</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="Inicio.aspx">Inicio</a></li>
+                        
+                        <!-- Dropdown Menú -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="WFClientes.aspx">Clientes</a></li>
+                                <li><a class="dropdown-item" href="WFClima.aspx">Clima</a></li>
+                                <li><a class="dropdown-item" href="WFCultivos.aspx">Cultivos</a></li>
+                                <li><a class="dropdown-item" href="WFDetalle.aspx">Detalle</a></li>
+                                <li><a class="dropdown-item" href="WFEmpleados.aspx">Empleados</a></li>
+                                <li><a class="dropdown-item" href="WFFinca.aspx">Finca</a></li>
+                                <li><a class="dropdown-item" href="WFInsumos.aspx">Insumos</a></li>
+                                <li><a class="dropdown-item" href="WFMaquinarias.aspx">Maquinaria</a></li>
+                                <li><a class="dropdown-item" href="WFParcelas.aspx">Parcelas</a></li>
+                                <li><a class="dropdown-item" href="WFProducto.aspx">Productos</a></li>
+                                <li><a class="dropdown-item" href="WFProveedores.aspx">Proveedores</a></li>
+                                <li><a class="dropdown-item" href="WFRiego.aspx">Riego</a></li>
+                                <li><a class="dropdown-item" href="WFVentas.aspx">Ventas</a></li>
+                                <li><a class="dropdown-item" href="WFDashboard.aspx">Dashboard</a></li>
+                                 <li><a class="dropdown-item" href="WFArduino.aspx">Arduino</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <p>&copy; 2024 Finca Agrícola. Comprometidos con la naturaleza y el progreso.</p>
+        </footer>
+    </form>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
