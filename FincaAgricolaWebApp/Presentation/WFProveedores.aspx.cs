@@ -102,6 +102,22 @@ namespace Presentation
             TBProducto.Text = GVProveedor.SelectedRow.Cells[2].Text;
             TBTelefono.Text = GVProveedor.SelectedRow.Cells[3].Text;
         }
+        protected void GVProveedor_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int _id = Convert.ToInt32(GVProveedor.DataKeys[e.RowIndex].Values[0]);
+            bool executed = objPro.deleteProveedor(_id);
+
+            if (executed)
+            {
+                LblMsj.Text = "La Proveedor se eliminó exitosamente.";
+                GVProveedor.EditIndex = -1;
+                showProveedor(); // Actualiza el GridView
+            }
+            else
+            {
+                LblMsj.Text = "Error al eliminar el proveedor.";
+            }
+        }
     }
 }
 

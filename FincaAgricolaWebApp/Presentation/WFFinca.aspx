@@ -33,7 +33,8 @@
         
         <!-- GridView -->
         <div class="table-responsive mt-4">
-            <asp:GridView ID="GVFinca" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVFinca_SelectedIndexChanged">
+            <asp:GridView ID="GVFinca" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-hover" OnSelectedIndexChanged="GVFinca_SelectedIndexChanged"
+                OnRowDeleting="GVFinca_RowDeleting" DataKeyNames="finc_id">
                 <Columns>
                     <asp:BoundField DataField="finc_id" HeaderText="ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
                     <asp:BoundField DataField="finc_nombre" HeaderText="Nombre" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />

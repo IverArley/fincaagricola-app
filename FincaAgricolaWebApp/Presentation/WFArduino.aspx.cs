@@ -102,5 +102,21 @@ namespace Presentation
             TBClima.Text = GVControlRiego.SelectedRow.Cells[2].Text;
             TBCantidadAgua.Text = GVControlRiego.SelectedRow.Cells[3].Text;
         }
+        protected void GVControlRiego_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int _id = Convert.ToInt32(GVControlRiego.DataKeys[e.RowIndex].Values[0]);
+            bool executed = objArd.deleteControlRiego(_id);
+
+            if (executed)
+            {
+                LblMsj.Text = "El riego se eliminó exitosamente.";
+                GVControlRiego.EditIndex = -1;
+                showControlRiego(); // Actualiza el GridView
+            }
+            else
+            {
+                LblMsj.Text = "Error al eliminar el riego.";
+            }
+        }
     }
 }
